@@ -1,0 +1,130 @@
+@font-face {
+    font-family: San-Fransisco-bold;
+    src: url(SanFrancisco/sfwin-master/SFPro/TrueType/SFProDisplay-Bold.ttf);
+}
+
+@font-face {
+    font-family: San-Fransisco;
+    src: url(SanFrancisco/sfwin-master/SFPro/TrueType/SFProDisplay-Regular.ttf);
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from { width : 0}
+}
+
+
+
+*, ::before, ::after {
+    background:#F7F7F9;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    min-height: 25px;
+    justify-content: space-between;
+    border-bottom: 2px;
+    background-color: #F7F7F9;
+    border: 1px solid rgb(200, 200, 200);
+}
+
+.name{
+    background-color: #F7F7F9;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0 10px 15px;
+    font-family: San-Fransisco-bold;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.name:hover {
+    transform: scale(1.01);
+} 
+
+
+.nav {
+    min-width: 50%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 10px;
+
+    font-family: San-Fransisco;
+
+  }
+  
+.nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 0 15px 0 15px;
+
+    color : black;
+    text-decoration: none;
+    background-color: #f7f7f900;
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover {
+    transform: scale(1.1);
+}
+
+.menu-grille {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px 200px 100px;
+}
+
+.menu-titre {
+    text-align: center;
+    font-family: San-Fransisco-bold;
+    font-size: 3em;
+    transition: transform .3s ease;
+}
+
+.menu-titre:hover {
+    transform: scale(1.01);
+}
+
+.menu-titre-anim {
+    display: inline-block;
+    text-align: center;
+}
+
+.text {
+    font-size: 1.1em;
+    font-family: San-Fransisco-bold;
+    border-right: 5px solid;
+    width : 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2.5s, cursor .4s step-end infinite alternate; 
+} 
+
+.menu-image{
+    width: 100;
+    height: auto;
+    align-items: center;
+}
+
+.menu-image img{
+    width: 100%;
+    height: auto;
+}
+
