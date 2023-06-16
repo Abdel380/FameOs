@@ -25,6 +25,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: San-Fransisco;
 }
 
 .header {
@@ -60,9 +61,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-gap: 10px;
-
-    font-family: San-Fransisco;
-
   }
   
 .nav-link {
@@ -85,10 +83,11 @@
 .menu-grille {
     display: flex;
     flex-direction: column;
+    align-items: center;
     max-width: 100%;
     width: 100%;
     height: auto;
-    padding: 50px 100px 200px 100px;
+    padding: 3% 100px 5% 100px;
 }
 
 .menu-titre {
@@ -118,9 +117,9 @@
 } 
 
 .menu-image{
-    width: 100;
+    width: 65%;
     height: auto;
-    align-items: center;
+    align-content: center;
 }
 
 .menu-image img{
@@ -128,3 +127,59 @@
     height: auto;
 }
 
+.page-2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.title-page2{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 4.5em;
+    padding-top: 0px;
+    padding: 10px;
+}
+
+.page2-paragraph, .portfolio-link{
+    margin: 15px;
+    text-align: center;
+    font-size: 1.5em;
+    width: 100%;
+}
+
+.portfolio-link{
+    text-decoration: none;
+    color: #06c;
+}
+
+
+
+
+
+
+@media (max-width: 900px){
+    .menu-titre {
+        font-size: 2em;
+    }
+    .menu-titre-anim{
+        font-size: 1.3em;
+    }
+    .menu-image {
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 450px){
+    .menu-titre {
+        font-size: 1.5em;
+    }
+    .menu-titre-anim{
+        font-size: 1.3em;
+    }
+    .menu-image {
+        width: 150%;
+    }
+}
